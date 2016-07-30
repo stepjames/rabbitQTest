@@ -6,3 +6,77 @@ or try
 **Eclipse Build path errors with 'pom.xml'**
 This happens when the file is accidentally placed on on the build path.
 Right-click the file and select "Build Path">>Remove from Build Path.
+
+
+
+GIT Notes
+GIT Comands.
+------------
+This is the repository created on GitHub!
+https://github.com/stepjames/[project_name]
+eg.
+https://github.com/stepjames/bambooTest or https://github.com/stepjames/BambooTest (its case insensitive...)
+
+
+////ADD
+The git add command takes a path name for
+either a file or a directory; if it’s a directory, the command adds all the files in
+that directory recursively.
+
+To stage a file, you run the git add command. 
+git add is a multipurpose command – you use it to begin tracking new files, 
+to stage files, and to do other things like marking merge conflicted
+files as resolved. It may be helpful to think of it more as “add this
+content to the next commit” rather than “add this file to the project”.
+
+////IGNORE Files
+You need to create a .gitignore file and add the types of files to ignore.
+However, this cannot be created on windows so use Gitbush and the command:
+touch .gitignore
+
+
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+////COMMIT
+# on Johns computer
+$ cd myproject
+$ git init
+$ git add .
+$ git commit -m 'initial commit'
+$ git remote add origin git@gitserver:/opt/git/project.git (is this required...)
+  git remote add [short_name] [URL]
+eg git remote add rabbitQTest https://github.com/stepjames/rabbitQTest
+$ git push rabbitQTest master
+
+///CLONE
+You clone a repository with git clone [url]. For example, if you want to
+clone the Git linkable library called libgit2, you can do so like this:
+$ git clone https://github.com/libgit2/libgit2
+That creates a directory named “libgit2”, initializes a .git directory inside it,
+pulls down all the data for that repository, and checks out a working copy of the
+latest version.
+
+If you want to clone the repository
+into a directory named something other than “libgit2”, you can specify that as
+the next command-line option:
+$ git clone https://github.com/libgit2/libgit2 mylibgit
+
+
+////TAG
+$ git tag -a v1.4 -m 'my version 1.4'
+$ git tag
+
+///BRANCHING
+git branch [Branch_Name]
+eg git branch testBranch
+
+Check by running 
+git log --oneline --decorate
+
+Switch to the new branch by running:
+git checkout testBranch
+
+
+

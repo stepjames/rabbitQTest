@@ -16,3 +16,7 @@ hs_err_pid*
 *.tmp
 .git/
 .settings/
+*.lst
+*.MF
+*.txt
+/**/pom.properties
