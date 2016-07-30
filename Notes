@@ -1,0 +1,8 @@
+To run Spring boot in eclipse, select:
+<Project>=>Run As=>Maven Build...=>In the Goals textfield, type the goal "spring-boot:run"
+or try
+<Project>=>Run As=>Maven Build
+
+**Eclipse Build path errors with 'pom.xml'**
+This happens when the file is accidentally placed on on the build path.
+Right-click the file and select "Build Path">>Remove from Build Path.
