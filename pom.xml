@@ -26,11 +26,10 @@
 					  <artifactId>amqp-client</artifactId>
 					  <version>3.6.3</version>
 				</dependency>
-				 <!-- dependency>
+				 <dependency>
 					  <groupId>junit</groupId>
 					  <artifactId>junit</artifactId>
-					  <version>4.12</version>
-				</dependency -->
+				</dependency>
 	  </dependencies>
   
     <!-- Package as an executable jar -->
@@ -46,4 +45,13 @@
     	<name>Tech Valley</name>
     	<url>http://www.thetechvalley.com</url>
     </organization>
+    <dependencyManagement>
+    	<dependencies>
+    		<dependency>
+    			<groupId>junit</groupId>
+    			<artifactId>junit</artifactId>
+    			<version>4.12</version>
+    		</dependency>
+    	</dependencies>
+    </dependencyManagement>
 </project>

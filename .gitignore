@@ -16,4 +16,11 @@ hs_err_pid*
 *.tmp
 .git/
 .settings/
+<<<<<<< HEAD
 /target/
+=======
+*.lst
+*.MF
+*.txt
+/**/pom.properties
+>>>>>>> testBranch
